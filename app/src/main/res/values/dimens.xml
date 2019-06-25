@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="add_item_start">33dp</dimen>
+    <dimen name="add_item_end">104dp</dimen>
+</resources>

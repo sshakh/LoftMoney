@@ -32,18 +32,15 @@ public class AddItemActivity extends AppCompatActivity {
 
         titleEdit.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
 
             @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
 
             @Override
             public void afterTextChanged(Editable editable) {
-                title = toString().toString();
+                //  Здесь editable - значения введенного текста из нашего EditText ( titleEdit )
+                title = editable.toString();
                 changeButtonTextColor();
 
             }
@@ -51,20 +48,16 @@ public class AddItemActivity extends AppCompatActivity {
 
         priceEdit.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
 
             @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
 
             @Override
             public void afterTextChanged(Editable editable) {
-                price = toString().toString();
+                //  Здесь editable - значения введенного текста из нашего EditText ( priceEdit )
+                price = editable.toString();
                 changeButtonTextColor();
-
             }
         });
     }

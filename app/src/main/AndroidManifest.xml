@@ -17,7 +17,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".AddItemActivity"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <!--Вынес тему в ресурсы-->
+        <activity
+            android:name=".AddItemActivity"
+            android:theme="@style/NoActionBarTheme"
+            />
     </application>
 
 </manifest>

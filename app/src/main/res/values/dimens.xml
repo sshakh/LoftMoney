@@ -2,4 +2,6 @@
 <resources>
     <dimen name="add_item_start">33dp</dimen>
     <dimen name="add_item_end">104dp</dimen>
+    <dimen name="add_item_textSize">24sp</dimen>
+    <dimen name="add_item_Bottom">68dp</dimen>
 </resources>

@@ -1,15 +1,21 @@
 package com.loftschool.syuldashev.loftmoney;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+
+import javax.xml.transform.Result;
+
 
 public class AddItemActivity extends AppCompatActivity {
 
@@ -39,7 +45,7 @@ public class AddItemActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                //  Здесь editable - значения введенного текста из нашего EditText ( titleEdit )
+
                 title = editable.toString();
                 changeButtonTextColor();
 
@@ -55,9 +61,17 @@ public class AddItemActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                //  Здесь editable - значения введенного текста из нашего EditText ( priceEdit )
+
                 price = editable.toString();
                 changeButtonTextColor();
+            }
+        });
+
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setResult(Activity.RESULT_OK, new Intent().putExtra("name", title).putExtra("price", price));
+                finish();
             }
         });
     }

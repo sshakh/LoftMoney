@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/add_button"
         android:orientation="vertical"
-        android:paddingBottom="68dp"
+        android:paddingBottom="@dimen/add_item_Bottom"
         android:paddingStart="@dimen/add_item_start"
         android:paddingEnd="@dimen/add_item_end"
         >
@@ -20,7 +20,7 @@
             android:hint="@string/title_hint"
             android:inputType="text"
             android:textColor="@color/title_text_color"
-            android:textSize="24sp"
+            android:textSize="@dimen/add_item_textSize"
             />
 
         <EditText
@@ -30,7 +30,7 @@
             android:hint="@string/price_hint"
             android:inputType="number"
             android:textColor="@color/title_text_color"
-            android:textSize="24sp"
+            android:textSize="@dimen/add_item_textSize"
             />
     </LinearLayout>
     
